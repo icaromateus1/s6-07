@@ -1,0 +1,5 @@
+n,n > 1,"return"
+1,false,"1"
+2,true,"2"
+3,true,"6"
+4,true,"24"

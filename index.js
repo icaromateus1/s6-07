@@ -4,22 +4,36 @@ function add(x,n){
 }
 
 
-function multiply(n){
+function multiply(x,n){
     var res = 1
-    for(var i = 0; i < n.length; i++) res *= n[i];
-    return res;
+    for(var i = 0; i < x.length; i++){
+    res = add(res, n)
+    }
+    return res
  }
 
 
 
 function power(x,n){
-    let resultado = x ** n 
-    return resultado
+    let res = 1
+    for (let i = 0; i < n; i++) {
+        res = multiply(res, x)
+    }
+    return res
 }
 
 let fatorial = n => {
-    if (n > 1) {
-        return n * fatorial(n - 1)
+    let res = 1
+    for (let i = n; i >= 2; i--) {
+        res = multiply(res, i)
     }
-    return n
+    return res
+}
+
+function fibonacci(x) {
+    let List = [0, 1]
+    for (let i = 2; i <= x; i++) {
+        List.push(add(List[i - 1], List[i - 2]))
+    }
+    return List[x]
 }

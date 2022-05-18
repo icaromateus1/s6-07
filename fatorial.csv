@@ -1,5 +1,6 @@
-n,n > 1,"return"
-1,false,"1"
-2,true,"2"
-3,true,"6"
-4,true,"24"
+n,i,"i<=2",res
+5,5,"true",5
+5,4,"true",20
+5,3,"true",60
+5,2,"true",120
+5,1,"false",120

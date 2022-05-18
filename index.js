@@ -5,8 +5,8 @@ function add(x,n){
 
 
 function multiply(x,n){
-    var res = 1
-    for(var i = 0; i < x.length; i++){
+    var res = 0
+    for(let i = 0; i < x; i++){
     res = add(res, n)
     }
     return res
@@ -15,7 +15,7 @@ function multiply(x,n){
 
 
 function power(x,n){
-    let res = 1
+    let res = 0
     for (let i = 0; i < n; i++) {
         res = multiply(res, x)
     }
